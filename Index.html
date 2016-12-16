@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="STEMBinary/js/jquery.js"></script>
+<script type="text/javascript" src="STEMBinary/js/quiz-1.js"></script>
+<script> 
+function playSound4 () {
+document.getElementById('play4').play();
+}
+
+function playSound3 () {
+document.getElementById('play3').play();
+}
+
+function playSound2 () {
+document.getElementById('play2').play();
+}
+
+function playSound () {
+document.getElementById('play').play();
+}
+</script>
+
+
+
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1><img id="Bit" src="Title.png" alt="Binary" width="600" height="400"></h1>
+	
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Welcome! This is Binary BootCamp reminding you there are only 10 people in the world. <br>
+	 Those who understand binary and those who don't.
+	</p>
+	<audio id="play" src="speech1.mp3"></audio>
+
+    <button onclick="playSound()">Play</button>
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pagetwo">Go to Next Page</a>  
+	<a href="#pagesix">Go to Quiz Page</a> 
+	<a href="#pageeight">Go to Addiotional Aid Page</a>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>ABOUT</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>BY: Kareem St. Louis <br>
+	EMAIL-Kast114@gmail.com <br>
+	<br>
+	This is a STEM based APP designed to familiarize or remind yourself about binary numbers <br>
+	On the following pages you'll find tips and tricks to help you from 0010 to 2.<br>
+	CREDIT TO; text2speech.org for our voice and Google images for our charts.<br> 
+	
+	</p>
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pageone">Go to Homepage</a>
+	<a href="#pagethree">Go to Next Page</a>
+	
+  </div>
+</div> 
+
+
+<div data-role="page" id="pagethree">
+  <div data-role="header">
+    <h1>Binary Introduction</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>The binary number system is a base-two system, meaning it uses two distinct digits – 0 and 1. <br>
+	   The decimal number system we’re all familiar with is a base-ten system, meaning it uses <br>
+	   ten distinct digits – 0 and 1, but also 2, 3, 4, 5, 6, 7, 8 and 9.<br>
+	   Counting in the decimal system, when all ten digits have been exhausted, the next number<br>
+	   is represented as ’10’. In the binary system, it’s the exact same. After 0 and 1 comes 10.<br>
+	   <img id="BinaryChart" src="Binarychart.png" alt="BitChart" width="300" height="250">
+	   </p>
+	   <audio id="play2" src="speech2.mp3"></audio>
+
+       <button onclick="playSound2()">Play</button>
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pageone">Go to Homepage</a>
+	<a href="#pagefour">Go to NextPage</a>
+  </div>
+</div> 
+
+
+<div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>Binary Cont I.</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>the binary system counts up in a logical order, and whenever a number <br>
+	made up of entirely 1’s is reached, an extra digit is added. This is exactly the same thing <br>
+	that happens in the decimal system when a number made up of entirely 9’s is reached.<br>
+	However, binary numbers in a computing context are always represented in 8 digits or less<br>
+	8 binary digits forming one byte. The total quantity of distinct numbers that can be <br>
+	represented in 8 digits is 2^8 = 256. 1 through 255 as well as 0.<br>
+	So 255 in binary is 11111111.<br>
+	 <img id="Binarybase" src="BinaryBase.png" alt="Bitbase" width="400" height="250">
+	</p>
+	<audio id="play3" src="speech3.mp3"></audio>
+
+    <button onclick="playSound3()">Play</button>
+
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pageone">Go to Homepage</a>
+	<a href="#pagefive">Go to NextPage</a>
+  </div>
+</div> 
+
+
+<div data-role="page" id="pagefive">
+  <div data-role="header">
+    <h1>Binary Cont II</h1>
+  </div>
+    <audio id="play4" src="speech4.mp3"></audio>
+
+    <button onclick="playSound4()">Play</button>
+  <div data-role="main" class="ui-content">
+    <p>Lets do a little recap.<br>
+	Binary numbers and arithmetic let you represent any amount you want using just two <br>
+	Decimal 1 is binary 0001 <br>
+    Decimal 3 is binary 0011 <br>
+	digits: 0 and 1. Each digit "1" in a binary number represents a power of two, and each "0" represents zero<br>
+	0001 is 2 to the zero power, or 1 <br>
+    0010 is 2 to the 1st power, or 2  <br>
+	When you see a number like "0101" you can figure out what it means by adding the powers of 2:<br>
+	0101 = 0 + 4 + 0 + 1 = 5 <br>
+	I hope you got all that feel free to start this Tour over if not.<br>
+	Now just one more thing.<br>
+	<br>
+	ADDITION<BR>
+	Adding two binary numbers together is like adding decimal numbers,<br>
+	except 1 + 1 = 10 (in binary, that is), so you have to carry the one to the next column:<br>
+	 0001 <br>
+   + 0100<br>
+	 ----<br>
+	 0101 (no carries to get this)<br>
+	 <br>
+	 
+	 0001<br>
+  + 0001 <br>
+	 ----<br>
+	 0010 (1 plus 1 is 10, carry the 1 to the next column)<br>
+	<br>
+	 0011<br>
+   + 0011 <br>
+	 ----<br>
+	 0110 (1 + 1 = 10, so carry; then 1 + 1 + 1 = 11, so carry again)<br>
+	<br>
+	0011<br>
+  + 0101 <br>
+    ----<br>
+	1000 (carry in every column here)<br>
+Subtraction is harder. Don't worry about it.<br>
+	</p>
+   
+
+	</div>
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	 <a href="#pageone">Go to Homepage One</a> 
+     <a href="#pagesix">Go to Quiz Page</a> <br>
+  </div>
+</div> 
+
+
+
+
+<div data-role="page" id="pagesix">
+ <div data-role="main" class="ui-content">
+ 
+ <p>QUIZ</p>
+<p class="question">1. What is 5 in binary?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">0101</label><br/>          
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">1111</label><br/>            
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">1110</label><br/>            
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">0100</label><br/>       
+</ul>        
+
+
+<p class="question">2. What is 0001+0001 in binary?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">0011</label><br/>           
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">0010</label><br/>            
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">1100</label><br/>           
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">0000</label><br/>       
+</ul>        
+
+<p class="question">3. What is 0100+0101 in Decimal?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">10</label><br/>            
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">11</label><br/>            
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">9</label><br/>           
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">7</label><br/>       
+</ul>        
+
+<p class="question">4. What is 1111 in Decimal?</p>        
+
+<ul class="answers">           
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">1</label><br/>            
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">11</label><br/>            
+<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">9</label><br/>            
+<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">15</label><br/>        
+</ul>        
+
+<p class="question">5. What is 2 + 1010 in Binary?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">1100</label><br/>            
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">1012</label><br/>            
+<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">1111</label><br/>           
+<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">1011</label><br/>        
+</ul>        
+
+
+
+	
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pageone">Go to Home Page</a>
+    <a href="#pageseven">Go to Answer Page</a>
+	<a href="#pagethree">Go to Lecture page</a>
+  </div>
+</div> 
+
+<div data-role="page" id="pageseven">
+  <div data-role="header">
+    <h1>AnswerPage.</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>
+	<br/>
+<div id="results">            
+Lets see the answers!       
+</div>                
+
+<div id="category1">            
+<p>              
+<strong>Question 1:</strong> The correct answer is the <strong>Answer : 0101 </strong>.</p>        
+</div>        
+
+<div id="category2">            
+<p>              
+<strong>Question 2:</strong> The correct answer is <strong>Answer : 0010 </strong>.</p>        
+</div>        
+
+<div id="category3">            
+<p>                
+<strong>Question 3:</strong> The correct answer is <strong>Answer : 9</strong>.</p>        
+</div>        
+
+<div id="category4">            
+<p>               
+<strong>Question 4:</strong> The correct answer is <strong>Answer : 15</strong>.</p>        
+</div>        
+
+<div id="category5">            
+<p>                
+<strong>Question 5:</strong> The correct answer is <strong>Answer : 1100 </strong>.</p>        
+</div>        
+	</p>
+	
+   
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	 <a href="#pageone">Go to Homepage</a>
+	<a href="#pageeight">Go to Addtional Aid Page</a>
+  </div>
+</div> 
+
+
+
+<div data-role="page" id="pageeight">
+  <div data-role="header">
+    <h1>Additional Aid.</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <p><a href="https://cisc3660.itch.io/binary-battleship">A partner Game demo for BINARY BATTLESHIP</a>
+  <br>
+    <br><a href="https://www.mathsisfun.com/binary-digits.html">An Introdcution from Math is Fun</a>
+	<br>
+	<br><a href="http://www.mathopolis.com/questions/q.php?id=1997">A Quiz from Mathopolis</a>
+	
+
+	
+	</p>
+	
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>Navigation</h1>
+	<a href="#pageone">Go to Homepage</a>
+  </div>
+</div> 
+
+
+
+</body>
+</html>
